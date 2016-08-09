@@ -7,6 +7,11 @@ angular.module('galleryApp')
   return {
     restrict: 'E',
     replace: true,
-    template: require('./app-main.html')
+    template: require('./app-main.html'),
+    controller: 'appMainController',
+    controllerAs: 'appMainCtrl',
+    bindToController: true,
+    scope: {
+    }
   };
 });
