@@ -1,6 +1,5 @@
-<li class = "app-gallery-item">
-  <img ng-src="{{imgSrc}}">
-  <h2> {{ title }} </h2>
-  <p> {{ desc }} </p>
-  <app-edit-gallery-item-form title = "title" desc = "desc"> </app-edit-gallery-item-form>
-</li>
+<div class = "app-gallery-item">
+  <img ng-src="{{appGalleriItemCtrl.image.imageUrl}}">
+  <h2> {{ appGalleryItemCtrl.image.title }} </h2>
+  <app-gallery-item-form submit="appGalleryItemCtrl.updateImage(image)" btn-title= "update image"</app-gallery-item-form>
+</div>

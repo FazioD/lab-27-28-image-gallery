@@ -13,3 +13,12 @@ function AppMainController() {
     }
   };
 }
+
+function AppMainController( {
+  this.displayModalImage = false;
+
+  this.showModalImage = function(imageUrl) {
+    this.displayImageUrl = imageUrl
+  }
+
+})
