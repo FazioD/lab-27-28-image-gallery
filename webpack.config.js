@@ -14,10 +14,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-      {
-        test: /\.scss$/,
-        loader: ExtractText.extract('style', 'css!sass!')
-      },
+
       {
         test: /\.js$/,
         loader: 'babel',
@@ -31,8 +28,12 @@ module.exports = {
         loader: 'html'
       },
       {
+        test: /\.scss$/,
+        loader: ExtractText.extract('style', 'css!postcss!sass!')
+      },
+      {
         test: /\.(jpg|gif|png)$/,
-        loader: 'file?name=img/[name]-[hash].[ext]'
+        loader: 'file?name=img/[hash].[ext]'
       },
       {
         test: /\.(eot|ttf|svg).*/,
@@ -40,7 +41,7 @@ module.exports = {
       },
       {
         test: /\.woff.*/,
-        loader: 'url?limit=1000'
+        loader: 'url?limit=10000'
       }
     ]
   },

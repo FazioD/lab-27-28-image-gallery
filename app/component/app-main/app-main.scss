@@ -1,3 +1,14 @@
+@import "_theme";
+
 .app-main {
-  background-color: white;
+  height: 100%;
+
+h1 {
+  color: $app-light;
+}
+
+  .app-gallery-container {
+    display:flex;
+    flex-wrap: wrap;
+  }
 }

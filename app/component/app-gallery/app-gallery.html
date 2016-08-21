@@ -1,15 +1,11 @@
 <section class = 'app-gallery'>
+  <app-header select-gallery-style = "galleryCtrl.selectGalleryStyle(style)"></app-header>
 
-  <form novalidate ng-submit = "appGalleryCtrl.addGalleryItem()">
-    <label for = "title">title:<label>
-    <imput name = "title" type: "text" ng-model="appGalleryCtrl.galleryItem.title">
-    <label for = "desc">desc:</label>
-    <input type = "text" ng-model = "appGalleryCtrl.galleryItem.desc">
-    <label for = "imgSrc">image source:</label>
-    <input type = "text" ng-model = "appGalleryCtrl.galleryItem.imgSrc">
-    <input type = "submit" value: "create item">
-  </form>
-  <ul>
-    <app-gallery-item ng-repeat = "item in appGalleryCtrl.images" title="{{item.title}}" desc="{{item.desc}}" img-src="{{item.imgSrc}}"></app-gallery-item>
-  </ul>
+<div class="gallery-item-container">
+
+  <app-list-item ng-repeat="item in galleryCtrl.images" ng-show="galleryCtrl.galleryStyle === 'list'" image="item"></app-list-item>
+  <app-thumb-item ng-repeat="item in galleryCtrl.images" ng-show="galleryCtrl.galleryStyle === 'thumb'" image="item"></app-thumb-item>
+  <app-img-item ng-repeat="item in galleryCtrl.images" ng-show="galleryCtrl.galleryStyle === 'image'" image ="item"></app-img-item>
+
+</div>
 </section>

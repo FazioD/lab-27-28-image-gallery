@@ -6,19 +6,11 @@ angular.module('galleryApp').controller('AppMainController', [AppMainController]
 
 function AppMainController() {
   this.images = [];
-
+  console.log('hitting main');
   this.addimage = function(image) {
+    console.log('hitting image', image);
     if( typeof image === 'object' && image.title && image.imageUrl) {
       this.images.push(image);
     }
   };
 }
-
-function AppMainController( {
-  this.displayModalImage = false;
-
-  this.showModalImage = function(imageUrl) {
-    this.displayImageUrl = imageUrl
-  }
-
-})

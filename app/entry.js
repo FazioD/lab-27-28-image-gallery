@@ -2,7 +2,7 @@
 
 //force it to use the file-loader once we configured the html loader//
 require('!!file?name=[name].[ext]!./html/index.html');
-require('./sass/base.scss');
+require('./scss/base.scss');
 
 //npm module//
 const angular = require('angular');
@@ -14,5 +14,4 @@ angular.module('galleryApp', []);
 require('./component/app-hello');
 require('./component/app-gallery');
 require('./component/app-gallery-item');
-require('./component/app-edit-gallery-item-form');
 require('./component/app-main');
