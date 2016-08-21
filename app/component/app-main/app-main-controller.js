@@ -4,13 +4,18 @@ const angular = require('angular');
 
 angular.module('galleryApp').controller('AppMainController', [AppMainController]);
 
+
+
+
 function AppMainController() {
-  this.images = [];
-  console.log('hitting main');
-  this.addimage = function(image) {
-    console.log('hitting image', image);
-    if( typeof image === 'object' && image.title && image.imageUrl) {
-      this.images.push(image);
-    }
+  this.displayModalImage = true;
+
+
+  this.hideModalImage = function() {
+    this.displayModalImage = false;
+  };
+  this.showModalImage = function(image) {
+    this.modalImage = image;
+    this.displayModalImage = true;
   };
 }

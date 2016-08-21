@@ -1,8 +1,6 @@
 'use strict';
 
-const angular = require('angular');
-
-angular.module('galleryApp')
+require('angular').module('galleryApp')
 .directive('appMain', function () {
   return {
     restrict: 'E',
@@ -11,7 +9,6 @@ angular.module('galleryApp')
     controller: 'AppMainController',
     controllerAs: 'appMainCtrl',
     bindToController: true,
-    scope: {
-    }
+    scope: {}
   };
 });

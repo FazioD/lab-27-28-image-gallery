@@ -1,15 +1,15 @@
 'use strict';
 
 const angular = require('angular');
+
 angular.module('galleryApp')
-.directive('appGalleryItemForm', function() {
+.directive('appImgItem', function() {
   return {
     restrict: 'E',
     replace: true,
-    tamplate: require('./app-gallery-item-form.html'),
+    template: require('./img-item.html'),
     scope: {
-      btnTitle:  '@',
-      submit: '&'
+      image: '='
     }
   };
 });
