@@ -1,0 +1,55 @@
+@import "_theme";
+
+.app-header {
+  border-botom: 4px solid;
+
+  header {
+    position: relative;
+    width: 100%;
+    background-color: $app-default;
+    font-family: 'Rubik one', sans-serif;
+  }
+  .header-logo {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+
+    i {
+      display: inline-block;
+      border: 2px solid $app-light;
+      padding: 5px;
+      padding-bottom: 6px;
+      color: $app-light;
+      font-size: 3em;
+    }
+
+    h1 {
+      margin-left: -2px;
+      font-size: 3em;
+      display: inline-block;
+      background-color: $app-light;
+      padding: 4px;
+      border: 2px solid;
+      font-weight: bolder;
+    }
+  }
+
+  .gallery-view-selector {
+    position: relative;
+    margin-top: 25px;
+    min-width: 200px;
+
+    button {
+      border-radius: 0px;
+      border:2px solid $app-dark;
+      font-size: 2em;
+      padding: 7px;
+    }
+  }
+  .header-padding {
+    height: 40px;
+    width: 100%;
+    background-color: $app-light;
+  }
+}
