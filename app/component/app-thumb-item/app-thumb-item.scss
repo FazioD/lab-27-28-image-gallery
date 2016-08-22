@@ -1,0 +1,20 @@
+@import "_theme";
+
+.app-thumb-item {
+  position: relative;
+  padding: 4px;
+}
+
+  img {
+    border: 4px solid $app-dark;
+    box-shadow: 4px 4px $app-light;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+.app-thumb-item:hover {
+  img {
+    border: 4px solid $app-light;
+    box-shadow: 4px 4px $app-dark;
+  }
+}
