@@ -1,0 +1,11 @@
+<section class="app-gallery">
+  <app-header select-gallery-style="appGalleryCtrl.selectGalleryStyle(style)"></app-header>
+
+  <div class="gallery-item-container-padding">
+  </div>
+  <div class="gallery-item-container">
+    <app-list-item ng-repeat="item in appGalleryCtrl.images" ng-show="appGalleryCtrl.galleryStyle ==='list'" image="item"></app-list-item>
+    <app-thumb-item ng-repeat="item in appGalleryCtrl.images" ng-show="appGalleryCtrl.galleryStyle ==='thumb'" image="item" show-modal-image="appMainCtrl.showModalImage(image)"></app-thumb-item>
+    <app-img-item ng-repeat="item in appGalleryCtrl.images" ng-show="appGalleryCtrl.galleryStyle ==='image'" image="item"></app-img-item>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+@import "_theme";
+
+.app-modal-image {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4000;
+
+  main {
+    position: relative;
+    margin-top: (100vh) * 0.2;
+    background-color: $app-default;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 430px;
+    border: solid 4px white;
+    box-shadow: 4px 4px $app-dark;
+    border-radius: 10px 10px 10px 10px;
+  
+
+    img {
+      width: 440px;
+      border: solid 4px white;
+      border-radius: 10px 0px 10px 0px;
+      box-shadow: 4px 4px $app-dark;
+    }
+
+    h2 {
+      line-height: 1.4em;
+      padding-left: 10px;
+      padding-bottom: 3px;
+      color: $app-default;
+      background-color: $app-light;
+      width: calc(100% + 20px);
+      border-radius: 4px 0px 0px 4px;
+    }
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  .app-close-modal {
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    color: $app-light;
+  }
+
+  .app-close-modal:hover {
+    color: $app-focus;
+  }
+
+  .app-close-modal:active {
+    color: $app-active;
+  }
+}

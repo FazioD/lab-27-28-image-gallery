@@ -1,0 +1,66 @@
+@import "_theme";
+
+.app-list-item {
+  position: relative;
+  width: 100%;
+  background-color: $app-dark;
+  border: 2px solid $app-dark;
+  margin: 10px;
+  padding-left: 10px;
+  padding-top: 2px;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 4px 4px $app-light;
+
+
+h2 {
+  .fa-file-image-o {
+    color: $app-dark;
+    margin-right: 8px;
+  }
+
+    width: calc(100% + 2px);
+    margin-top:  4px;
+    margin-bottom: 4px;
+    padding: 0px;
+    padding-left: 8px;
+    line-height: 1.3em;
+    background-color: $app-light;
+    color: $app-default;
+    font-size: 1em;
+
+  }
+}
+
+p {
+  color: $app-default;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 2px;
+}
+
+
+.app-list-item:hover {
+  background-color:  $app-dark;
+  box-shadow: 4px 4px $app-dark;
+  h2 {
+    color: $app-light;
+    background-color: $app-dark;
+  }
+
+  .fa {
+    color: $app-light;
+  }
+
+  .fa:hover {
+    color: $app-focus;
+  }
+
+  .fa:active {
+    color: $app-active;
+  }
+
+  .fa.disabled {
+    color: $app-disabled;
+  }
+}

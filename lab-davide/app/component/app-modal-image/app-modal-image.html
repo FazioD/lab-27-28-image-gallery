@@ -1,0 +1,8 @@
+<div class="app-modal-image">
+  <i ng-click="appModalImageCtrl.close()" class="app-close-modal fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
+  <main>
+    <img ng-src="{{appModalImageCtrl.image.imgUrl}}" alt={{appModalImageCtrl.image.title}}>
+    <h2> {{ appModalImageCtrl.image.title }} </h2>
+    <p class="app-desc">{{ appModalImageCtrl.image.desc }} </p>
+  </main>
+</div>
